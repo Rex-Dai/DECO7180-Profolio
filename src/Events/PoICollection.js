@@ -1,15 +1,13 @@
 import React, { useMemo, useState, useContext } from 'react'
 import { EventContext, TimelineState } from "./EventContext";
 import { PoIMarkerGroup } from './PoIMarkerGroup';
-import { PoIThumbnailGroup } from './PoIThumbnailGroup';
-import { PoIPosterGroup } from './PoIPosterGroup';
 import { useThree } from "@react-three/fiber";
 import tweenCamera from "./CameraTravese";
-import { AboutUs } from '../More/AboutUs';
+import {PoIThumbnailGroup} from "./PoIThumbnailGroup";
 
 const PoICollection = (props) => {
 
-    const eventData = require("./eventData.json")
+    const eventData = require("./testData.json")
     // const eventData = require("./testData.json")
     const { eventState, setEventState, timelinePos, ambientIntensity, setAmbientIntensity  } = useContext(EventContext)
     const { camera } = useThree();
@@ -19,7 +17,7 @@ const PoICollection = (props) => {
     const [lightTarget, SetlightTarget] = useState([0, 0, 0])
     const [lightIntensity, SetlightIntensity] = useState([0])
     // const aboutUsButton = useMemo(() =>
-    //     <AboutUs />, [camera]
+    //     <AboutMe />, [camera]
     // )
     
     const ambientLight = useMemo(() => 
@@ -109,11 +107,6 @@ const PoICollection = (props) => {
                 posterPosList={posterPosList}
                 hoverIn={onHoverIn}
                 hoverOut={onHoverOut}
-            />
-            <PoIPosterGroup
-                eventData={eventData}
-                posterPosList={posterPosList}
-                // activePoster={activePoster}
             />
             {ambientLight}
             {light}

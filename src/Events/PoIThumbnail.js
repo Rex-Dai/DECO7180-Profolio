@@ -7,7 +7,7 @@ import { ModelContext } from './ModelContext';
 
 
 export const PoIThumbnail = (props) => {
-    const textureImg = require("../Images/POI-thumbnails/" + props.event.category + "/" + props.event.thumbnail)
+    const textureImg = require("../Images/thumbnail/" + props.event.thumbnail)
     const {
         eventState,
         setEventState,

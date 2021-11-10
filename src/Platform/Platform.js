@@ -13,8 +13,8 @@ const Platform = (props) => {
     horiInt = props.platformSettings.horizontalInterval;
 
     const lineList = [];
-    const indicator = [];
-    const label = []
+    const label = [];
+    const text = ["2 A", "2 C", "2 D", "2 E", "Overall"]
 
 
     // the index props for vertical line stands for the coordinate at x axis
@@ -24,7 +24,7 @@ const Platform = (props) => {
     }
 
     // the index props for horizontal line stands for the y coordinate
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 5; i++) {
         lineList.push(<Line index={horiStart +
             i * horiInt} type={'horizontal'} key={"hor" + i} />);
     }
@@ -32,30 +32,22 @@ const Platform = (props) => {
     // the index props for monthIndicator stands for the year and month
     // e.g. index = 1402 will be interpreted as 02/1914, no additional indicator for Jan.
     for (let i = 14; i < 19; i++) {
-        for (let j = 2; j < 13; j++) {
-            indicator.push(<Line index={i * 100 + j} type={'monthIndicator'}
-                platformSetting={props.platformSettings} key={100 * i + j} />);
-        }
         label.push(<TextLabel position={[verStart - 9,
-        horiStart + (i - 14) * horiInt, -3]} text={(1900 + i).toString()}
+        horiStart + (i - 14) * horiInt, -3]} text={(text[i - 14])}
             colour={"#ffffff"}
             key={i} />)
     }
-    label.push(<TextLabel position={[verStart - 9,
-    horiStart + (19 - 14) * horiInt, -3]} text={(1900 + 19).toString()}
-        colour={"#ffffff"}
-        key="end" />);
     label.push(<TextLabel position={[props.platformSettings.verticalStartCoordinate,
-        props.platformSettings.horizontalStartCoordinate, -3]} text={"Australia"} key="Australia" colour={"#ffff00"} />)
+        props.platformSettings.horizontalStartCoordinate, -3]} text={"Documentation"} key="Australia" colour={"#ffff00"}
+        size={1} height={0.2}/>)
     label.push(<TextLabel position={[props.platformSettings.verticalStartCoordinate + 12.5,
-        props.platformSettings.horizontalStartCoordinate, -3]} text={"World"} key="World" colour={"#ffff00"} />)
+        props.platformSettings.horizontalStartCoordinate, -3]} text={"Reflection"} key="World" colour={"#ffff00"}
+                          size={1} height={0.2}/>)
     // these are the category labels
-    console.log(label)
 
     return (
         <group>
             {lineList}
-            {indicator}
             {label}
         </group>
     )

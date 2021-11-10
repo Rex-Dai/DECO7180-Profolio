@@ -4,7 +4,9 @@
     margin: 0;
 }
 
-
+body{
+    background-color: black;
+}
 
 a{
     color: #42a5f5;
@@ -39,6 +41,7 @@ ul li{
     padding: 30px;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     /* width: 100%; */
     /* height: 100%; */
 }
@@ -57,10 +60,4 @@ ul li{
 .about-footer *{
     flex-grow: 1;
 }
-.about-footer > *:first-child{
-    text-align: center;
-}
 
-.source-footer{
-    text-align: start;
-}

@@ -103,9 +103,9 @@ export const SceneEventController = () => {
 const ModelContextProvider = () => {
 
     // load the texture for globe
-    const globeImg = require("./Images/earth-reduced.jpg")
+    const globeImg = require("./Images/025-thinking.png")
     const globeTexture = useMemo(() => new THREE.TextureLoader().load(globeImg.default), [])
-    const australiaImg = require("./Images/australia-reduced.jpg")
+    const australiaImg = require("./Images/file-copy-fill.png")
     const australiaTexture = useMemo(() => new THREE.TextureLoader().load(australiaImg.default), [])
     const wallImg = require('./Images/brickWall.jpg')
     const wallTexture = useMemo(() =>  new THREE.TextureLoader().load(wallImg.default),[])

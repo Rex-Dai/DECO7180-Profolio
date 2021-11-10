@@ -1,7 +1,7 @@
 import {EventContext, TimelineState} from "../Events/EventContext";
 import tweenCamera from "../Events/CameraTravese";
 import {useThree} from "@react-three/fiber";
-import {AboutUs} from "./AboutUs";
+import {AboutMe} from "./AboutMe";
 import Birds from "./Birds";
 import {useContext, Suspense} from "react";
 import {MoreButton} from "./MoreButton";
@@ -37,7 +37,7 @@ const MoreCollection = (props) => {
             <group className={"handleVisibility"} visible={eventState === TimelineState.BIRD ||
             eventState === TimelineState.INFO}>
                 <group className={"handleLabels"} onPointerMissed={manageTraverseBackAtBird} >
-                    <AboutUs birdPosition={birdPosition}/>
+                    <AboutMe birdPosition={birdPosition}/>
                 </group>
                 <Suspense fallback={null}>
                     <mesh className={"handleBirdsPositions"} position={birdPosition}>

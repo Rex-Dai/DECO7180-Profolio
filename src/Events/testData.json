@@ -1,20 +1,84 @@
 {
     "events": [
         {
-            "id": 19,
-            "date": "1918-3-21",
+            "id": 1,
+            "date": "1914-7-21",
+            "category": "Australia",
+            "thumbnail": "FERRET.png",
+            "title": "2A Documentation",
+            "html": "./2a_doc.html"
+        },
+        {
+            "id": 2,
+            "date": "1914-7-21",
             "category": "World",
-            "thumbnail": "21_March_1918.jpg",
-            "thumbnailWidth": 1080,
-            "thumbnailHeight": 720,
-            "poster": "21_March_1918.png",
-            "posterWidth": 1400,
-            "posterHeight": 5063,
-            "databaseID": "cf4d43d8-2aad-4512-99e6-f6be2bf24466",
-            "databaseQuery": {"title": "1914"},
-            "title": "German spring offensives",
-            "imageField": "500_pixel",
-            "contentField": "title"
+            "thumbnail": "Concept – 3.png",
+            "title": "2A Reflection",
+            "html": "./2a_ref.html"
+        },
+        {
+            "id": 5,
+            "date": "1915-7-21",
+            "category": "Australia",
+            "thumbnail": "Image from iOS_cat.jpeg",
+            "title": "2C Documentation",
+            "html": "./2c_doc.html"
+        },
+        {
+            "id": 6,
+            "date": "1915-7-21",
+            "category": "World",
+            "thumbnail": "Example – 1.png",
+            "title": "2C Reflection",
+            "html": "./2c_ref.html"
+        },
+        {
+            "id": 7,
+            "date": "1916-7-21",
+            "category": "Australia",
+            "thumbnail": "000097480015_22.jpeg",
+            "title": "2D Documentation",
+            "html": "./2d_doc.html"
+        },
+        {
+            "id": 8,
+            "date": "1916-7-21",
+            "category": "World",
+            "thumbnail": "Screen Shot 2021-10-26 at 10.28.57 am.png",
+            "title": "2D Reflections",
+            "html": "./2d_ref.html"
+        },
+        {
+            "id": 9,
+            "date": "1917-7-21",
+            "category": "Australia",
+            "thumbnail": "Image from iOS.jpeg",
+            "title": "2E Documentation",
+            "html": "./2e_doc.html"
+        },
+        {
+            "id": 10,
+            "date": "1917-7-21",
+            "category": "World",
+            "thumbnail": "20211104_212413.jpeg",
+            "title": "2E Reflections",
+            "html": "./2e_ref.html"
+        },
+        {
+            "id": 11,
+            "date": "1918-7-21",
+            "category": "Australia",
+            "thumbnail": "20211104_184055.jpeg",
+            "title": "Portfolio Documentation",
+            "html": "./por_doc.html"
+        },
+        {
+            "id": 12,
+            "date": "1918-7-21",
+            "category": "World",
+            "thumbnail": "20211104_212219.jpeg",
+            "title": "Course Reflections",
+            "html": "./course_ref.html"
         }
     ]
 }

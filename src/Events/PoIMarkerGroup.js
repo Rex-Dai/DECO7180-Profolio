@@ -52,7 +52,8 @@ export const PoIMarkerGroup = (props) => {
                 hoverIn={props.hoverIn}
                 hoverOut={props.hoverOut}
                 category={element.category}
-                text={element.title + ", " + element.date}
+                title={element.title}
+                html={element.html}
                 key={"marker " + element.id}/>)
         })
         return markers

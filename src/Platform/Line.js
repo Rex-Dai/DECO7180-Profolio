@@ -40,7 +40,7 @@ const Line = (props) => {
     return (
         <line position={[0, 0, -1]} ref={ref}>
             <bufferGeometry attach="geometry" onUpdate={onUpdate}/>
-            <lineBasicMaterial attach="material" color={'#ffffff'} linewidth={100} linecap={'round'} linejoin={'round'}/>
+            <lineBasicMaterial attach="material" color={'#ffffff'} linewidth={1} linecap={'round'} linejoin={'round'}/>
             {/* <meshLambertMaterial attach="material" emissive={'#ffffff'}/> */}
         </line>
     )

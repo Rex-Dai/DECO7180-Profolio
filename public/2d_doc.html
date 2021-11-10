@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="about.css">
+    <meta name="description" content="Single page application projected powered by DECO7180 Team S1S aka Team Ferret"/>
+</head>
+
+<body>
+<article class="about-article">
+    <h1>Work In Progress Documentation</h1>
+
+    <div class="about-footer">
+        <div style="text-align: center">
+            <h2>My Contribution</h2>
+            <ul>
+                <li>Implemented of the timeline platform</li>
+                <li>Co-designed new event systems by reducing states</li>
+                <li>Researched & Introduced Javascript Animation Library - Tween.js</li>
+                <li>Implemented the first version of camera traverse function</li>
+                <li>Demoed our project in terms of functionality</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Implemented of the timeline platform</h2>
+
+    <p>
+        The implementation of the timeline platform could be divided into the collection of ‘Lines‘ and ‘TextLabels’.
+        ‘BufferGeometry’ and ‘LineMaterial’ are used to generate lines as documented in three.js best practice,
+        meanwhile, wrapping it around the react component and using props to make it reusable. The same implementation
+        approach applies for ‘TextLabels’ as well to make it versatile. Then, these components were mapped based on the
+        PoI date and pre-set platform settings.
+    </p>
+    <img src="./Images/2d_timeline.png" alt="Timeline images at 2D"/>
+
+    <h2>Co-designed new event systems by reducing states</h2>
+    <p>
+        After some implementation and discussion between two of me and Jerry, we figured:
+        1.Making every object in 3D is easier than having some UI elements overlay
+        2. Just scrolling through the timeline could be felt weak in terms of interaction
+        3. We could make better use of our environment
+        4. Implementing camera movement and positioning some additional elements on the scene is less work compared to
+        their effect
+        So, we discussed about what is feasible and what would be more interactive, and we came up some changes that
+        alter the interaction and design. The interaction scenario is and rough camera angle is shown in the drawing
+        here.
+    </p>
+    <img src="./Images/2d_co-design.png" alt="New State management for timeline"/>
+
+
+</article>
+</body>
+
+</html>
